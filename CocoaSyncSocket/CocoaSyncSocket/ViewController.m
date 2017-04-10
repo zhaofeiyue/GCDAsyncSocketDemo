@@ -39,8 +39,8 @@
  */
 @end
 
-static  NSString * Khost = @"192.168.199.139";  //192.168.199.183 我自己当时写的默认特征值
-static const uint16_t Kport = 5566;
+static  NSString * Khost = @"192.168.1.200";  //192.168.199.183 我自己当时写的默认特征值
+static const uint16_t Kport = 9501;
 
 @implementation ViewController
 
@@ -140,7 +140,7 @@ static const uint16_t Kport = 5566;
     //    [self sendData:data5 :@"img"];
 }
 
-//服务端接收到连接成功
+//接收到连接成功
 - (void)socket:(GCDAsyncSocket *)sender didAcceptNewSocket:(GCDAsyncSocket *)newSocket
 {
     [_socketArray addObject:newSocket];
